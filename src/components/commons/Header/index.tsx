@@ -7,7 +7,7 @@ export function Header() {
         <Flex align="center" gap="5">
           <Image src="/Icon.jpg" color="gray.500" alt="Ícone blob.g" width="34px" />
           <Flex direction="column">
-            <Heading>blob.g</Heading>
+            <Heading fontSize="2xl">blob.g</Heading>
             <Text>Notícias do mundo dos códigos</Text>
           </Flex>
         </Flex>

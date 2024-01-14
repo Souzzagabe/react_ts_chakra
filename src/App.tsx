@@ -15,10 +15,7 @@ function App() {
           {vertical_cards.map((vertical_card) => (
             <VerticalCard
               key={vertical_card.title}
-              title={vertical_card.title}
-              content={vertical_card.content}
-              image={vertical_card.image}
-              publishDate={vertical_card.publish_date}
+              card={vertical_card}
             />
           ))}
         </Center>
