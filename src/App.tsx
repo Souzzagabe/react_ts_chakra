@@ -1,3 +1,4 @@
+import { Header } from "./components/commons/Header"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-        ready to code
+        <Header/>
       </div>
     </>
   )
