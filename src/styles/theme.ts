@@ -1,17 +1,17 @@
 import { extendTheme } from "@chakra-ui/react";
 
-// include custom option in here, like collors, fonts ..
+// Inclua opções personalizadas aqui, como cores, fontes, etc.
 
 const customTheme = {
-    components: {
-        Text: {
-            subtitle: {
-                color: 'gray.500',
-                fontWheight: 'semibold',
-                fontSize: '14px',
-            },
-        },
+  components: {
+    Text: {
+      subtitle: {
+        color: 'gray.500',
+        fontWeight: 'semibold', 
+        fontSize: '14px',
+      },
     },
+  },
 };
 
 const theme = extendTheme(customTheme);
