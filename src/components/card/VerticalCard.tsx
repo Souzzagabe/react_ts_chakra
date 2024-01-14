@@ -11,13 +11,14 @@ interface VerticalCardProps {
 }
 
 export default function VerticalCard({ image, title, content, publishDate }: VerticalCardProps) {
+
     return (
         <Flex direction="column" alignItems="center" justifyContent="center">
             <Image src={image.url} alt={image.alt} maxW="800px" />
-            <VStack textAlign="center" mt="4">
+            <VStack textAlign="center" mt="4" p={10}>
                 <Text>{publishDate}</Text>
                 <Heading>{title}</Heading>
-                <Text>{content}</Text>
+                <Text p="50">{content}</Text>
             </VStack>
         </Flex>
     );
