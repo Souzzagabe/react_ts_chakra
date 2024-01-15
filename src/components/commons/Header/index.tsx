@@ -1,7 +1,7 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
 export function Header() {
-  
+
   return (
     <Flex
       gap="5"

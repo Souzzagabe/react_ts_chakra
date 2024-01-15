@@ -1,0 +1,41 @@
+@media only screen and (max-width: 800px) {
+    .swiper-button-prev {
+      display: none;
+    }
+  
+    .swiper-button-next {
+      display: none;
+    }
+  
+    .swiper {
+      padding-bottom: 18px;
+      padding-top: 18px;
+    }
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .swiper {
+      padding: 32px;
+    }
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: black;
+  }
+  
+  .swiper-button-prev {
+    color: black;
+  }
+  
+  .swiper-button-next {
+    color: black;
+  }
+.swiper {
+  width: 1500px;
+}
