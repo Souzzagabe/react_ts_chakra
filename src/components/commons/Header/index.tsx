@@ -1,6 +1,7 @@
 import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 export function Header() {
+  
   return (
     <Flex
       gap="5"
@@ -21,7 +22,10 @@ export function Header() {
             alt="Ícone blob.g"
             width="34px"
           /> */}
-          <Flex direction="column" textShadow={"1px 1px 2px rgba(0, 0, 0, 0.5)"}>
+          <Flex
+            direction="column"
+            textShadow={"1px 1px 2px rgba(0, 0, 0, 0.5)"}
+          >
             <Heading fontSize="2xl">Blog</Heading>
             <Text>news from the world of codes</Text>
           </Flex>

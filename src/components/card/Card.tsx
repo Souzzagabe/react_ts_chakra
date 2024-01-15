@@ -17,10 +17,9 @@ export function Card({ card }: CardProps) {
   const { title, content, image, publishDate } = card;
 
   return (
-    
     <Flex
+      w="100vw"
       direction={"column"}
-      maxW={"80%"}
       borderRadius="8px"
       bgColor="gray.100"
       mt="30"
@@ -49,8 +48,12 @@ export function Card({ card }: CardProps) {
         <Text fontSize="sm" color="gray.500" fontWeight="semibold">
           {publishDate}
         </Text>
-        <Heading fontSize="xl" size="lg">{title}</Heading>
-        <Text fontSize="md" overflowY="auto" css={customScrollbar}>{content}</Text>
+        <Heading fontSize="xl" size="lg">
+          {title}
+        </Heading>
+        <Text fontSize="md" overflowY="auto" css={customScrollbar}>
+          {content}
+        </Text>
       </VStack>
     </Flex>
   );

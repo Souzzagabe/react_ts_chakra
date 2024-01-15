@@ -1,4 +1,12 @@
-import { Flex, Image, VStack, Text, Heading, Box } from "@chakra-ui/react";
+import {
+  Flex,
+  Image,
+  VStack,
+  Text,
+  Heading,
+  Box,
+  Container,
+} from "@chakra-ui/react";
 import { customScrollbar } from "../../styles/styles";
 
 interface HorizontalCardProps {
@@ -17,14 +25,14 @@ export default function HorizontalCard({ card }: HorizontalCardProps) {
   const { image, title, content, publishDate } = card;
 
   return (
-    
     <Flex
-      maxW="80%"
+      w="100vw"
       borderRadius="8px"
       bgColor="gray.100"
       overflow="hidden"
       mt="30"
       mb="50"
+      maxW="800px"
     >
       <Image
         src={image.url}
@@ -42,14 +50,17 @@ export default function HorizontalCard({ card }: HorizontalCardProps) {
         flex="1"
         minW="200px"
         h={["200px", "300px", "400px"]}
-        maxW={"800px"}
+        w={"800px"}
       >
-        <Text 
-        fontSize="sm" color="gray.500" fontWeight="semibold">
+        <Text fontSize="sm" color="gray.500" fontWeight="semibold">
           {publishDate}
-        </Text >
-        <Heading fontSize="xl" size="lg">{title}</Heading>
-        <Text fontSize="md" overflowY="auto" css={customScrollbar}>{content}</Text>
+        </Text>
+        <Heading fontSize="xl" size="lg">
+          {title}
+        </Heading>
+        <Text fontSize="md" overflowY="auto" css={customScrollbar}>
+          {content}
+        </Text>
       </VStack>
     </Flex>
   );

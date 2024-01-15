@@ -10,7 +10,7 @@ function App() {
     <>
       <div>
         <Header/>
-        <Center background={"#31658B"}>
+        <Center background={"#31658B"} w="100vw">
           <VStack gap={"64px"}>
             {horizontal_cards.map((horizontal_card) => (
               <HorizontalCard
