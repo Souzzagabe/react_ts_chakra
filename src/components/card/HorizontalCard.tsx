@@ -24,31 +24,30 @@ export default function HorizontalCard({ card }: HorizontalCardProps) {
 
   return (
     <Flex
-      w="100vw"
-      borderRadius="8px"
-      bgColor="gray.100"
-      overflow="hidden"
-      mt="30"
-      mb="50"
-      maxW="800px"
-      p="8px"
+    maxW="850px"
+    maxH="400px"
+    borderRadius="8px"
+    bgColor="gray.100"
+    direction={['column', 'row']}
+    mt="50px"
     >
       <Image
         src={image.url}
         alt={image.alt}
-        maxW={["200px", "300px", "400px", "500px"]}
-        maxH={["200px", "300px", "400px", "500px"]}
+        maxW={['100px', '250px', '300px', '300px', '300px']}
+        maxH={['100px', '250px', '300px', '300px', '300px']}
         objectFit="cover"
         borderLeftRadius="8px"
+        alignSelf="center"
+        justifySelf="center"
+        p={['5px', '0px']}
       />
       <VStack
-        textAlign="left"
         p="16px"
-        spacing="4"
+        spacing={['5px', '16px']}
         align="flex-start"
-        flex="1"
-        minW="200px"
-        h={["200px", "300px", "400px"]}
+        maxW="350px"
+        h={['200px', '300px', '300px']}
       >
         {publishDate && (
           <Text fontSize="sm" color="gray.500" fontWeight="semibold">
