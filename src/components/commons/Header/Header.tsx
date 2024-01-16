@@ -1,6 +1,7 @@
 import { memo } from "react";
 
 import { Flex, Heading} from "@chakra-ui/react";
+// import { IconButton } from "@chakra-ui/icons";
 
 export function Header() {
 
@@ -20,7 +21,7 @@ export function Header() {
             direction="column"
             textShadow={"1px 1px 2px rgba(0, 0, 0, 0.5)"}
           >
-            <Heading fontSize="2xl" color="#FFF">bibicode.</Heading>
+            <Heading fontSize="2xl" color="#FFF">bibicode .</Heading>
           </Flex>
         </Flex>
       </a>

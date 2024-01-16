@@ -1,10 +1,10 @@
 import { Box, Center, VStack } from "@chakra-ui/react";
 import { Header } from "./components/commons/Header";
-import HorizontalCard from "./components/card/HorizontalCard";
+import HorizontalCard from "./components/card/Card/HorizontalCard/HorizontalCard";
 import { Card } from "./components/card/Card/"
 import { CardSlider } from "./components/carrousels/CardCarrousel";
 
-import { horizontal_cards, cards, cards_carrousel } from "./compontents-mock.json";
+import { horizontal_cards, cards, cards_carrousel } from "./components-mock.json";
 
 function App() {
 
