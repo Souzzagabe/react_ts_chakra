@@ -26,15 +26,15 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #718096
+  background-color: white;
 }
 
 .swiper-button-prev {
-  color: #718096
+  color: white;
 }
 
 .swiper-button-next {
-  color: #718096
+  color: white;
 }
 
 .swiper {

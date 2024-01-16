@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <div>
-        <Header />
-        <Center background={"#31658B"} w="100vw">
+        <Header/>
+        <Center background={"#14151E"} w="100vw">
           <Box maxW="1280px" overflow="hidden">
           <VStack gap={"64px"}>
             {horizontal_cards.map((horizontal_card) => (
