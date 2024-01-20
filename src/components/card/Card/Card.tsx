@@ -47,7 +47,7 @@ export function Card({ card }: CardProps) {
           </Text>
         )}
 
-        <Heading fontSize="xl" size="lg">
+        <Heading fontSize={["md", "2xl", "2xl"]} size="lg">
           {title}
         </Heading>
         <Text fontSize="md" overflowY="auto" css={customScrollbar}>

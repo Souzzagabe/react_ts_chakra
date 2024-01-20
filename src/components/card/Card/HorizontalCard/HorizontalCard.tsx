@@ -1,10 +1,4 @@
-import {
-  Flex,
-  Image,
-  VStack,
-  Text,
-  Heading,
-} from "@chakra-ui/react";
+import { Flex, Image, VStack, Text, Heading } from "@chakra-ui/react";
 import { customScrollbar } from "../../../../styles/styles";
 import { HorizontalCardType } from "./types";
 
@@ -13,39 +7,35 @@ export default function HorizontalCard({ card }: HorizontalCardType) {
 
   return (
     <Flex
-    maxW="850px"
-    maxH="400px"
-    borderRadius="8px"
-    bgColor="gray.100"
-    direction={['column', 'row']}
-    mt="50px"
+      maxW="850px"
+      maxH="400px"
+      borderRadius="8px"
+      bgColor="gray.100"
+      direction={["row"]}
+      mt="50px"
     >
       <Image
         src={image.url}
         alt={image.alt}
-        maxW={['100px', '250px', '300px', '300px', '300px']}
-        maxH={['100px', '250px', '300px', '300px', '300px']}
+        maxW={["100px", "250px", "300px", "300px", "300px"]}
+        maxH={["250px", "300px", "300px", "300px"]}
         objectFit="cover"
         borderLeftRadius="8px"
-        alignSelf="center"
         justifySelf="center"
-        p={['5px', '0px']}
       />
       <VStack
         p="16px"
-        spacing={['5px', '16px']}
+        spacing={["5px", "16px"]}
         align="flex-start"
         maxW="350px"
-        h={['200px', '300px', '300px']}
+        h={["200px", "300px", "300px"]}
       >
         {publishDate && (
           <Text fontSize="sm" color="gray.500" fontWeight="semibold">
             {publishDate}
           </Text>
         )}
-        <Heading fontSize="xl" size="lg">
-          {title}
-        </Heading>
+        <Heading fontSize={["md", "2xl", "2xl"]}>{title}</Heading>
         <Text fontSize="md" overflowY="auto" css={customScrollbar}>
           {content}
         </Text>

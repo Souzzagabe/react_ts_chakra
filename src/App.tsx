@@ -1,5 +1,6 @@
 import { Box, Center, VStack } from "@chakra-ui/react";
 import { Header } from "./components/commons/Header";
+import Footer from "./components/commons/footer/Footer";
 import HorizontalCard from "./components/card/Card/HorizontalCard/HorizontalCard";
 import { Card } from "./components/card/Card/"
 import { CardSlider } from "./components/carrousels/CardCarrousel";
@@ -28,6 +29,7 @@ function App() {
               {cards_carrousel && <CardSlider cards={cards_carrousel}/>}
           </Box>
         </Center>
+        <Footer/>
       </div>
     </>
   );

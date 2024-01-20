@@ -1,6 +1,6 @@
 export const customScrollbar = {
     '&::-webkit-scrollbar': {
-      width: '8px',
+      width: '9px',
     },
     '&::-webkit-scrollbar-track': {
       width: '6px',
