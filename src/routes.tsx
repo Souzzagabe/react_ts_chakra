@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 export const MappedRoutes = () => {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/"/>
-            </Routes>
-        </Router>
-    )
-}
+  return (
+    <Routes>
+      <Route path="/home" element={<Home />} />
+    </Routes>
+  );
+};

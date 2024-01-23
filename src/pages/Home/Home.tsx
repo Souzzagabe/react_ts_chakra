@@ -1,13 +1,11 @@
-import { memo } from "react"
-
+import { Box } from "@chakra-ui/react";
 
 const Home = () => {
-    return (
-        <div>
-            <h1>teste</h1>
-            <h2>te</h2>
-        </div>
-    )
-}
+  return (
+    <Box p="4" maxW="1280px" mx="auto">
+      <h1>Conteúdo da Página Home</h1>
+    </Box>
+  );
+};
 
-export default memo(Home)
+export default Home;
